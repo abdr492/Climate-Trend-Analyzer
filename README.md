@@ -92,6 +92,7 @@ Raw Climate Data
 │ + Streamlit UI      │
 └─────────────────────┘
 
+---
 
 ## 📁 Folder Structure
 
