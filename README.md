@@ -96,17 +96,19 @@ Raw Climate Data
 
 ## 📁 Folder Structure
 
+### 📂 Project Layout
+
 Climate-Trend-Analyzer/
 │
 ├── app/
-│   └── app.py                  ← Streamlit dashboard
+│   └── app.py
 │
 ├── src/
-│   ├── data_loader.py          ← Load dataset
-│   ├── preprocessing.py        ← Data cleaning & feature creation
-│   ├── anomaly.py              ← Anomaly detection logic
-│   ├── forecasting.py          ← ML forecasting model
-│   ├── lstm_model.py           ← Deep learning model
+│   ├── data_loader.py
+│   ├── preprocessing.py
+│   ├── anomaly.py
+│   ├── forecasting.py
+│   ├── lstm_model.py
 │
 ├── data/
 │   ├── raw/
@@ -116,97 +118,107 @@ Climate-Trend-Analyzer/
 │   ├── graphs/
 │   └── reports/
 │
-├── requirements.txt
-├── README.md
-├── .gitignore
+├── requirements.txt  
+├── README.md  
+├── .gitignore  
 
 ---
 
 ## ⚙️ Installation & Setup
 
-Step 1: Clone Repository  
-git clone https://github.com/abdr492/Climate-Trend-Analyzer.git
+### 📥 Step 1: Clone Repository
+git clone https://github.com/abdr492/Climate-Trend-Analyzer.git  
 cd Climate-Trend-Analyzer  
 
-Step 2: Create Virtual Environment  
+### 🧪 Step 2: Create Virtual Environment
 python -m venv venv  
 venv\Scripts\activate  
 
-Step 3: Install Dependencies  
+### 📦 Step 3: Install Dependencies
 pip install -r requirements.txt  
 
-Step 4: Run Dashboard  
+### ▶️ Step 4: Run Dashboard
 streamlit run app/app.py  
 
 ---
 
 ## 📊 Dashboard Features
 
+### 📌 Core Features
 - KPI Metrics (Avg Temp, Max Temp, Anomalies)  
-- Temperature Trend Analysis  
-- Anomaly Detection Visualization  
-- Moving Average Smoothing  
-- Monthly Analysis (Bar Charts)  
-- Distribution Analysis (Donut Chart)  
-- Feature Relationship & Correlation  
-- Forecasting (ML Model)  
-- Deep Learning Forecast (LSTM)  
-- Multi-page Navigation UI  
+- Temperature Trend Visualization  
+- Anomaly Detection Graph  
+
+### 📊 Advanced Features
+- Moving Average Trend  
+- Monthly Analysis (Bar Chart)  
+- Distribution (Donut Chart)  
+- Correlation Heatmap  
+- Feature Relationship Analysis  
+
+### 🔮 Forecasting
+- Machine Learning Forecast  
+- LSTM Deep Learning Forecast  
 
 ---
 
 ## 📊 Results
 
-Forecasting  
-- ML model captures general trend patterns  
-- LSTM captures temporal dependencies  
+### 📈 Forecasting Performance
+- ML captures general trends  
+- LSTM captures time dependencies  
 
-Anomaly Detection  
-- Successfully identifies extreme temperature spikes  
+### ⚠️ Anomaly Detection
+- Detects extreme temperature spikes  
 
-Visualization  
-- Interactive charts improve interpretability  
-- Multi-page UI enhances user experience  
+### 📊 Visualization Impact
+- Improves data interpretation  
+- Enhances user experience  
 
 ---
 
 ## 🚧 Challenges & Solutions
 
+### 🛠 Issues Faced
 | Challenge | Solution |
 |----------|--------|
-| Missing features (CO₂, rainfall) | Dynamic feature handling |
-| Small dataset issues | Fallback visualizations |
-| Duplicate charts error | Unique Streamlit keys |
+| Missing features | Dynamic feature selection |
+| Small dataset | Fallback graphs |
+| Duplicate charts | Unique Streamlit keys |
 | UI clutter | Sidebar navigation |
 
 ---
 
 ## 🔮 Future Improvements
 
-- Add CO₂ and rainfall datasets  
-- Integrate real-time climate APIs  
-- Add geographic map visualization  
-- Deploy dashboard online (Streamlit Cloud)  
-- Improve LSTM accuracy with larger dataset  
+### 🚀 Enhancements
+- Add CO₂ and rainfall data  
+- Integrate real-time APIs  
+- Add map-based visualization  
+- Deploy dashboard online  
+- Improve LSTM accuracy  
 
 ---
 
 ## 🎓 Learning Outcomes
 
-- Time-series data analysis  
+### 🧠 Skills Gained
+- Time-series analysis  
 - Anomaly detection techniques  
-- ML vs Deep Learning comparison  
-- Dashboard development using Streamlit  
-- Handling real-world data limitations  
+- ML vs Deep Learning understanding  
+- Streamlit dashboard development  
+- Handling real-world data issues  
 
 ---
 
 ## 👨‍💻 Author
 
-Abdul Rahman Anas  
+### 👤 Abdul Rahman Anas  
 B.E CSE (AI & ML)  
 Lords Institute of Engineering & Technology  
 
 ---
 
-## ⭐ If you found this useful, consider starring the repository!
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub!
