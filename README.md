@@ -91,6 +91,8 @@ Raw Climate Data
 │ Visualization       │  ← Plotly charts
 │ + Streamlit UI      │
 └─────────────────────┘
+
+
 ## 📁 Folder Structure
 
 Climate-Trend-Analyzer/
