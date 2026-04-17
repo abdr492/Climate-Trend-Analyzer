@@ -1,4 +1,6 @@
 # 🌍 Climate Trend Analyzer Dashboard
+Industry-Level Climate Analytics & Forecasting System  
+Built with Python, Machine Learning, Deep Learning, and Streamlit  
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-yellow?logo=pandas)
@@ -8,8 +10,6 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?logo=streamlit)
 ![Plotly](https://img.shields.io/badge/Plotly-Visualization-purple?logo=plotly)
 ![License](https://img.shields.io/badge/License-MIT-green)
-Industry-Level Climate Analytics & Forecasting System  
-Built with Python, Machine Learning, Deep Learning, and Streamlit  
 
 ---
 
@@ -62,32 +62,138 @@ The system is built on time-series climate data and demonstrates how data scienc
 
 ## 🏗️ System Architecture
 
-```text
-Raw Climate Data
-        │
-        ▼
-┌─────────────────────┐
-│   Data Loading      │
-└─────────┬───────────┘
-          │
-          ▼
-┌─────────────────────┐
-│   Preprocessing     │  ← Date parsing, feature creation
-└─────────┬───────────┘
-          │
-          ▼
-┌─────────────────────┐
-│  Anomaly Detection  │  ← Z-score method
-└─────────┬───────────┘
-          │
-          ▼
-┌─────────────────────┐
-│ Forecasting Models  │  ← Linear Regression
-│ + LSTM Model        │
-└─────────┬───────────┘
-          │
-          ▼
-┌─────────────────────┐
-│ Visualization       │  ← Plotly charts
-│ + Streamlit UI      │
-└─────────────────────┘
+Raw Climate Data  
+        │  
+        ▼  
+Data Loading  
+        │  
+        ▼  
+Preprocessing (Date parsing, feature creation)  
+        │  
+        ▼  
+Anomaly Detection (Z-score method)  
+        │  
+        ▼  
+Forecasting Models (Linear Regression + LSTM)  
+        │  
+        ▼  
+Visualization + Streamlit Dashboard  
+
+---
+
+## 📁 Folder Structure
+
+Climate-Trend-Analyzer/
+│
+├── app/
+│   └── app.py
+│
+├── src/
+│   ├── data_loader.py
+│   ├── preprocessing.py
+│   ├── anomaly.py
+│   ├── forecasting.py
+│   ├── lstm_model.py
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── outputs/
+│   ├── graphs/
+│   └── reports/
+│
+├── requirements.txt
+├── README.md
+├── .gitignore
+
+---
+
+## ⚙️ Installation & Setup
+
+Step 1: Clone Repository  
+git clone https://github.com/abdr492/Climate-Trend-Analyzer.git  
+cd Climate-Trend-Analyzer  
+
+Step 2: Create Virtual Environment  
+python -m venv venv  
+venv\Scripts\activate  
+
+Step 3: Install Dependencies  
+pip install -r requirements.txt  
+
+Step 4: Run Dashboard  
+streamlit run app/app.py  
+
+---
+
+## 📊 Dashboard Features
+
+- KPI Metrics (Avg Temp, Max Temp, Anomalies)  
+- Temperature Trend Analysis  
+- Anomaly Detection Visualization  
+- Moving Average Smoothing  
+- Monthly Analysis (Bar Charts)  
+- Distribution Analysis (Donut Chart)  
+- Feature Relationship & Correlation  
+- Forecasting (ML Model)  
+- Deep Learning Forecast (LSTM)  
+- Multi-page Navigation UI  
+
+---
+
+## 📊 Results
+
+Forecasting  
+- ML model captures general trend patterns  
+- LSTM captures temporal dependencies  
+
+Anomaly Detection  
+- Successfully identifies extreme temperature spikes  
+
+Visualization  
+- Interactive charts improve interpretability  
+- Multi-page UI enhances user experience  
+
+---
+
+## 🚧 Challenges & Solutions
+
+| Challenge | Solution |
+|----------|--------|
+| Missing features (CO₂, rainfall) | Dynamic feature handling |
+| Small dataset issues | Fallback visualizations |
+| Duplicate charts error | Unique Streamlit keys |
+| UI clutter | Sidebar navigation |
+
+---
+
+## 🔮 Future Improvements
+
+- Add CO₂ and rainfall datasets  
+- Integrate real-time climate APIs  
+- Add geographic map visualization  
+- Deploy dashboard online (Streamlit Cloud)  
+- Improve LSTM accuracy with larger dataset  
+
+---
+
+## 🎓 Learning Outcomes
+
+- Time-series data analysis  
+- Anomaly detection techniques  
+- ML vs Deep Learning comparison  
+- Dashboard development using Streamlit  
+- Handling real-world data limitations  
+
+---
+
+## 👨‍💻 Author
+
+Abdul Rahman Anas  
+B.E CSE (AI & ML)  
+Lords Institute of Engineering & Technology  
+
+---
+
+## ⭐ If you found this useful, consider starring the repository!
