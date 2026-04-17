@@ -62,22 +62,35 @@ The system is built on time-series climate data and demonstrates how data scienc
 
 ## 🏗️ System Architecture
 
-Raw Climate Data  
-        │  
-        ▼  
-Data Loading  
-        │  
-        ▼  
-Preprocessing (Date parsing, feature creation)  
-        │  
-        ▼  
-Anomaly Detection (Z-score method)  
-        │  
-        ▼  
-Forecasting Models (Linear Regression + LSTM)  
-        │  
-        ▼  
-Visualization + Streamlit Dashboard  
+```text
+Raw Climate Data
+        │
+        ▼
+┌─────────────────────┐
+│   Data Loading      │
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│   Preprocessing     │  ← Date parsing, feature creation
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│  Anomaly Detection  │  ← Z-score method
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│ Forecasting Models  │  ← Linear Regression
+│ + LSTM Model        │
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│ Visualization       │  ← Plotly charts
+│ + Streamlit UI      │
+└─────────────────────┘
 
 ---
 
@@ -86,14 +99,14 @@ Visualization + Streamlit Dashboard
 Climate-Trend-Analyzer/
 │
 ├── app/
-│   └── app.py
+│   └── app.py                  ← Streamlit dashboard
 │
 ├── src/
-│   ├── data_loader.py
-│   ├── preprocessing.py
-│   ├── anomaly.py
-│   ├── forecasting.py
-│   ├── lstm_model.py
+│   ├── data_loader.py          ← Load dataset
+│   ├── preprocessing.py        ← Data cleaning & feature creation
+│   ├── anomaly.py              ← Anomaly detection logic
+│   ├── forecasting.py          ← ML forecasting model
+│   ├── lstm_model.py           ← Deep learning model
 │
 ├── data/
 │   ├── raw/
@@ -112,7 +125,7 @@ Climate-Trend-Analyzer/
 ## ⚙️ Installation & Setup
 
 Step 1: Clone Repository  
-git clone https://github.com/abdr492/Climate-Trend-Analyzer.git  
+git clone https://github.com/abdr492/Climate-Trend-Analyzer.git
 cd Climate-Trend-Analyzer  
 
 Step 2: Create Virtual Environment  
