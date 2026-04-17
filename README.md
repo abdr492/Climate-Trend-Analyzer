@@ -67,42 +67,51 @@ This project builds an interactive dashboard to analyze climate trends and forec
 
 ## 🏗️ System Architecture
 
-### 🔄 Pipeline Flow
+## 🏗️ System Architecture
 
-Raw Climate Data  
-        │  
-        ▼  
-Data Loading  
-        │  
-        ▼  
-Preprocessing  
-        │  
-        ▼  
-Anomaly Detection  
-        │  
-        ▼  
-Forecasting Models (ML + LSTM)  
-        │  
-        ▼  
-Visualization + Dashboard  
+```text
+Raw Climate Data
+        │
+        ▼
+┌─────────────────────┐
+│   Data Loading      │
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│   Preprocessing     │  ← Date parsing, feature creation
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│  Anomaly Detection  │  ← Z-score method
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│ Forecasting Models  │  ← Linear Regression
+│ + LSTM Model        │
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│ Visualization       │  ← Plotly charts
+│ + Streamlit UI      │
+└─────────────────────┘
 
 ---
-
-## 📁 Folder Structure
-
-### 📂 Project Layout
 
 Climate-Trend-Analyzer/
 │
 ├── app/
-│   └── app.py
+│   └── app.py                  ← Streamlit dashboard
 │
 ├── src/
-│   ├── data_loader.py
-│   ├── preprocessing.py
-│   ├── anomaly.py
-│   ├── forecasting.py
-│   ├── lstm_model.py
+│   ├── data_loader.py          ← Load dataset
+│   ├── preprocessing.py        ← Data cleaning & feature creation
+│   ├── anomaly.py              ← Anomaly detection logic
+│   ├── forecasting.py          ← ML forecasting model
+│   ├── lstm_model.py           ← Deep learning model
 │
 ├── data/
 │   ├── raw/
@@ -112,10 +121,9 @@ Climate-Trend-Analyzer/
 │   ├── graphs/
 │   └── reports/
 │
-├── requirements.txt  
-├── README.md  
-├── .gitignore  
-
+├── requirements.txt
+├── README.md
+├── .gitignore
 ---
 
 ## ⚙️ Installation & Setup
