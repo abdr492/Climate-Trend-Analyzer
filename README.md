@@ -95,7 +95,7 @@ Raw Climate Data
 ---
 
 ## 📁 Folder Structure
-
+```text
 Climate-Trend-Analyzer/
 │
 ├── app/
@@ -119,6 +119,7 @@ Climate-Trend-Analyzer/
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
+```
 ---
 
 ## ⚙️ Installation & Setup
