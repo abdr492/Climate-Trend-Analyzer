@@ -65,11 +65,11 @@ This project builds an interactive dashboard to analyze climate trends and forec
 
 ---
 
-## 🏗️ System Architecture
+
 
 ## 🏗️ System Architecture
 
-```text
+
 Raw Climate Data
         │
         ▼
